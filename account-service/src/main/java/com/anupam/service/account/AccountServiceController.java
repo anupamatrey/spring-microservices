@@ -25,6 +25,7 @@ public class AccountServiceController {
 	@GetMapping("/msg")
 	public String getMsg() {
 		logger.debug("Hello from Account Service ..................... {} " , this.msg);
+		logger.info("Hello from Account Service ..................... {} " , this.msg);
 		return this.msg;
 
 	}
