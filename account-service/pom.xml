@@ -68,6 +68,32 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- Docker Build and Push Image to Registrty -->
+			<!-- Docker -->
+			<plugin>
+				<groupId>io.openliberty.boost</groupId>
+				<artifactId>boost-maven-plugin</artifactId>
+				<version>0.1</version>
+				<configuration>
+					<repository>anupamattrey/${project.artifactId}</repository>
+					<tag>${project.version}</tag>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>docker-build</goal>
+							<goal>docker-push</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- <plugin> <groupId>com.spotify</groupId> <artifactId>dockerfile-maven-plugin</artifactId> 
+				<version>1.4.10</version> <executions> <execution> <id>default</id> <goals> 
+				<goal>build</goal> <goal>push</goal> </goals> </execution> </executions> 
+				<configuration> <repository>anupamattrey/${project.name}</repository> <tag>${project.version}</tag> 
+				<skipDockerInfo>true</skipDockerInfo> <dockerHost>tcp://localhost:2375</dockerHost> 
+				<dockerCertPath>C:\Users\Anupam Sharma\.docker\machine\machines\box</dockerCertPath> 
+				</configuration> </plugin> -->
 		</plugins>
 	</build>
 
