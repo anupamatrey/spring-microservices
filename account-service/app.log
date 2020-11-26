@@ -1,0 +1,55 @@
+2020-11-24 13:01:40 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-24 13:01:41 [restartedMain] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2020-11-24 13:01:43 [restartedMain] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=account-service, profiles=[development], label=null, version=3a43d1a1243bf9c8282b743d3d2bdf79d04131e1, state=null
+2020-11-24 13:01:43 [restartedMain] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-c:\\Workspace\\config-server-repo/account-service-development.properties'}, BootstrapPropertySource {name='bootstrapProperties-c:\\Workspace\\config-server-repo/account-service.properties'}]
+2020-11-24 13:01:43 [restartedMain] INFO  c.a.s.a.AccountServiceApplication - The following profiles are active: development
+2020-11-24 13:01:44 [restartedMain] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-24 13:01:44 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=091ec7d3-c8e4-3d3d-971d-886e2332ec30
+2020-11-24 13:01:45 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2223 (http)
+2020-11-24 13:01:45 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2073 ms
+2020-11-24 13:01:45 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-24 13:01:46 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2020-11-24 13:01:47 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2020-11-24 13:01:47 [restartedMain] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-24 13:01:47 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-11-24 13:01:47 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-11-24 13:01:48 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-24 13:01:48 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-11-24 13:01:49 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application ACCOUNT-SERVICE with eureka with status UP
+2020-11-24 13:01:49 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2223 (http) with context path ''
+2020-11-24 13:01:49 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 2223
+2020-11-24 13:01:49 [restartedMain] INFO  c.a.s.a.AccountServiceApplication - Started AccountServiceApplication in 10.387 seconds (JVM running for 12.299)
+2020-11-24 13:02:27 [http-nio-2223-exec-1] DEBUG c.a.s.a.AccountServiceController - Hello from Logback {}
+2020-11-24 13:02:28 [http-nio-2223-exec-2] DEBUG c.a.s.a.AccountServiceController - Hello from Logback {}
+2020-11-24 13:03:08 [Thread-1] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ACCOUNT-SERVICE with eureka with status DOWN
+2020-11-24 13:03:08 [Thread-1] ERROR c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1606240988791, current=DOWN, previous=UP]
+2020-11-24 13:03:08 [Thread-1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-24 13:03:13 [restartedMain] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2020-11-24 13:03:14 [restartedMain] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=account-service, profiles=[development], label=null, version=3a43d1a1243bf9c8282b743d3d2bdf79d04131e1, state=null
+2020-11-24 13:03:14 [restartedMain] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-c:\\Workspace\\config-server-repo/account-service-development.properties'}, BootstrapPropertySource {name='bootstrapProperties-c:\\Workspace\\config-server-repo/account-service.properties'}]
+2020-11-24 13:03:14 [restartedMain] INFO  c.a.s.a.AccountServiceApplication - The following profiles are active: development
+2020-11-24 13:03:15 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=091ec7d3-c8e4-3d3d-971d-886e2332ec30
+2020-11-24 13:03:15 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 2223 (http)
+2020-11-24 13:03:15 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1142 ms
+2020-11-24 13:03:15 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-24 13:03:16 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2020-11-24 13:03:16 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2020-11-24 13:03:16 [restartedMain] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-24 13:03:16 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-11-24 13:03:16 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-11-24 13:03:17 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application ACCOUNT-SERVICE with eureka with status UP
+2020-11-24 13:03:17 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 2223 (http) with context path ''
+2020-11-24 13:03:17 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 2223
+2020-11-24 13:03:17 [restartedMain] INFO  c.a.s.a.AccountServiceApplication - Started AccountServiceApplication in 5.205 seconds (JVM running for 100.292)
+2020-11-24 13:03:17 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-11-24 13:03:37 [http-nio-2223-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-24 13:03:37 [http-nio-2223-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-11-24 13:03:37 [http-nio-2223-exec-1] DEBUG c.a.s.a.AccountServiceController - Hello from Logback {}
+2020-11-24 13:03:38 [http-nio-2223-exec-2] DEBUG c.a.s.a.AccountServiceController - Hello from Logback {}
+2020-11-24 13:03:38 [http-nio-2223-exec-4] DEBUG c.a.s.a.AccountServiceController - Hello from Logback {}
+2020-11-24 13:03:38 [http-nio-2223-exec-5] DEBUG c.a.s.a.AccountServiceController - Hello from Logback {}
+2020-11-24 13:03:38 [http-nio-2223-exec-3] DEBUG c.a.s.a.AccountServiceController - Hello from Logback {}
+2020-11-24 13:04:22 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2020-11-24 13:04:22 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ACCOUNT-SERVICE with eureka with status DOWN
+2020-11-24 13:04:22 [RMI TCP Connection(11)-127.0.0.1] ERROR c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1606241062354, current=DOWN, previous=UP]
+2020-11-24 13:04:22 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
